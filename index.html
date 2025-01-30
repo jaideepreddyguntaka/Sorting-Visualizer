@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="./sorting_sty.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sorting Visualizer</h1>
+      <div class="controls">
+        <div class="algo">
+          <label for="algorithm">Select Sorting Algorithm</label>
+          <select id="algorithm">
+            <option id="bubble">Bubble Sort</option>
+            <option id="selection">Selection Sort</option>
+            <option id="insertion">Insertion Sort</option>
+            <option id="merge">Merge Sort</option>
+            <option id="quick">Quick Sort</option>
+          </select>
+        </div>
+
+        <div class="spd">
+          <label for="speed">Speed</label>
+          <select id="speed">
+            <option id="1">Fast</option>
+            <option id="2">Medium</option>
+            <option id="3">Slow</option>
+          </select>
+        </div>
+
+        <button id="generate-array">Generate New Array</button>
+        <button id="start-sorting">StartSorting</button>
+
+        <div class="visualization" id="visualization"></div>
+      </div>
+    </div>
+    <script src="./sorting_visualizer.js"></script>
+  </body>
+</html>
